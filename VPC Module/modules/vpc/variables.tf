@@ -1,28 +1,36 @@
 variable "private_cidr" {
-  type = list(string)
-  #default = ["10.0.0.0/19", "10.0.32.0/19"]
+  type    = list(string)
+  default = [""]
 }
 variable "availability_zones" {
-  type = list(string)
-  #  default = ["us-east-1a", "us-east-1b"]
+  type    = list(string)
+  default = [""]
 }
 
 variable "public_cidr" {
-  type = list(string)
-  # default = ["10.0.64.0/19", "10.0.96.0/19"]
+  type    = list(string)
+  default = [""]
 }
 
 variable "region" {
-  type = string
-  # default = ["us-east-1", "us-east-2", "us-west-1"]
+  type    = string
+  default = ""
 }
 
 variable "environment" {
-  type = string
-  # default = ["prod", "stage", "dev"]
+  type    = string
+  default = ""
 }
 
 variable "cidr_block" {
+  type    = string
+  default = ""
+}
+
+variable "log_destination" {
   type = string
-  # default = "10.0.0.0/16"
+  default = ""
+}
+variable "log_destination_type" {
+  type = string
 }
