@@ -12,5 +12,4 @@ variable "remote-region" {
 
 variable "destination-cidr" {
   type = string
-
 }
